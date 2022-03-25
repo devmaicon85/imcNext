@@ -1,0 +1,132 @@
+.main {
+    padding: 0 2rem;
+    margin-bottom: 30px;
+}
+
+.headerContainer {
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+.container {
+    display: flex;
+    max-width: 900px;
+    margin: auto;
+}
+
+.leftSide {
+    flex: 1;
+    margin: 20px;
+}
+
+.leftSide h1 {
+    margin: 0px;
+    font-size: 40px;
+    color: #3a4b5c;
+}
+
+.leftSide p {
+    font-size: 16px;
+    margin-bottom: 40px;
+    color: #6a7d8b;
+}
+
+.leftSide input {
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid #6a7d8b;
+    padding: 10px 2px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    outline: none;
+}
+
+.leftSide input:hover {
+    opacity: 0.8;
+}
+
+.leftSide button {
+    width: 100%;
+    border: 0;
+    border-radius: 20px;
+    font-size: 18px;
+    height: 40px;
+    background-color: #005984;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 40px;
+    transition: all ease 0.3s;
+}
+.leftSide button:hover {
+    opacity: 0.8;
+}
+
+.rightSide {
+    flex: 1;
+    display: flex;
+    margin: 20px;
+}
+
+.grid {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.gridResult {
+    flex: 1;
+    display: flex;
+    gap: 20px;
+}
+
+.gridResult .leftArrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background-color: #3c3c3c;
+    opacity: 0.3;
+    border-radius: 50%;
+
+    width: 60px;
+    height: 60px;
+
+    cursor: pointer;
+
+    margin-left: -34px;
+    margin-top: 150px;
+
+    transition: all ease 0.3s;
+}
+
+.leftArrow:hover {
+    opacity: 0.7;
+}
+
+@media (max-width: 770px) {
+    .container {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 550px) {
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .leftSide {
+        margin: 0px;
+    }
+    .rightSide {
+        margin: 0px;
+        margin-top: 20px;
+    }
+
+    .gridResult .leftArrow {
+        width: 50px;
+        height: 50px;
+        margin-left: -20px;
+        margin-top: 20px;
+    }
+}
